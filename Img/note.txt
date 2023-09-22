@@ -1,0 +1,14 @@
+git add index.html =>to add staged
+git restore --staged index.html
+
+git commit -a -m "update text to free range"
+git log
+git log --outline
+git log --pq
+
+git branch programmer
+git switch programmer
+
+git merge -m "Merge programmer back to master" programmer
+
+git branch -d FixTemp

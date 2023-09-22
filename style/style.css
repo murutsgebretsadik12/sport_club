@@ -1,0 +1,165 @@
+
+  /* Global styles */
+  body {
+    font-family: 'Piazzolla', serif;
+  }
+  /* nav style */
+  nav{
+    width: 100%;
+    height: 80px;
+    background-color:#98C5E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 9; 
+    
+  }
+  nav .logo{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+   
+  
+  }
+  nav ul li{
+    list-style: none;
+    padding: 1px 5px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+  }
+  .navbar_toggleable{
+    display: none;
+  }
+  /* main style */
+  .banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../Img/man_city_bgi3.webp);
+    background-size: cover;
+    background-position: 25% 75%;
+  }
+  .banner-clip-path{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0,20% 0, 40% 100%, 0 100%);
+    background-color:rgb(201, 201, 225);
+    background-image: url(../img/city_logo.png);
+    background-repeat: no-repeat;
+    background-position: 70px 300px; 
+    z-index: 2;
+  }
+  .row .banner-txt{
+    width: 40%;
+    position: absolute;
+    top: 80%;
+    left:65%;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    transform: translateY(-50%);
+  }
+  
+  .banner-txt #button{
+    width: 170px;
+    height: 40px;
+    color:black;
+    font-size: 12px ;
+    background: rgb(201, 201, 225);;
+    border-radius: 23px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    transition: transform 0.5s;
+    font-family: 'Piazzolla', serif;
+   
+  }
+  
+  button:hover{
+    transform: translateX(30px);
+    color: hotpink;
+    background-color: purple;
+    border: 2px solid black;
+    transition: 0.6s;
+  }
+  
+  
+  /* video navigation */
+  .video_wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #001838;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+   
+  }
+  .bottom_nav{
+    position: absolute;
+    top: 50px; 
+    background-color: #001838;
+    color: white;
+   
+  
+   
+  }
+  .nav_video{
+    width: 60%; 
+    margin: 0 auto;
+    z-index: 9;  
+    min-width: 650px;
+  }
+  
+  .video{
+    display:flex;
+    align-items: center;
+    color: #3BD6FF;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .video_youtube{
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+/* Media query for smaller screen */
+@media (max-width: 768px) {
+    .navbar_toggleable{
+        display: block;    
+    }
+    nav ul{
+        display: none;
+       
+    }
+
+    .row .banner-txt, .banner-clip-path {
+        display: none;
+    }
+
+}
